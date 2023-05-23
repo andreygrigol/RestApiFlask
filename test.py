@@ -9,7 +9,7 @@ data = [
 ]
 
 for i in range(len(data)):
-    response = requests.put(BASE + "video/1" + str(i), data[i])
+    response = requests.put(BASE + "video/" + str(i), data[i])
     print(response.json())
 
 input()

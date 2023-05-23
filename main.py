@@ -38,7 +38,7 @@ class Video(Resource):
     def delete(self, video_id):
         abort_not_video_id(video_id)
         del videos[video_id]
-        return "", 204
+        return '', 204
 
 
 api.add_resource(Video, "/video/<int:video_id>")
